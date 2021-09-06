@@ -1,12 +1,27 @@
 <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
 <html>
     <head>
-        <TITLE>Email Signature</TITLE>
+        <title>Assinatura FADEX</title>
         <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="table_style.css">
+        <link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet'>
         <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <script src="index.js"></script>
     </head>
     <body>
-        <table id="main_table"cellpadding="0" cellspacing="0">
+        <div id="background">
+            <form id="form_container">
+                <p id="title_form">Assinatura de email FADEX</p>
+                <p class="content_form" id="name_form">Nome</p>                        
+                <input type="text" class="content_form_box" id="name_box" placeholder="Seu nome"/>
+                <p class="content_form" id="jobname_form">Cargo</p>
+                <input type="text" class="content_form_box" id="jobname_box" placeholder="Seu cargo"/>
+                <p class="content_form" id="email_form">E-mail</p>
+                <input type="email" class="content_form_box" id="email_box" placeholder="Seu e-mail"/>
+
+                <button id="button_submit" type="button" onclick="set_user_information('name_box','jobname_box','email_box')">GERAR ASSINATURA</button>
+            <div id="table_box">
+            <table id="main_table"cellpadding="0" cellspacing="0">
             <tbody>
                 <tr>
                     <td id="main_table_data_cell_1" valign="top">	
@@ -69,6 +84,9 @@
                     </td>
                 </tr>  
             </tbody>
-        </table>
+            </table>
+            </div>
+            </form>
+        </div>
     </body>
 </html>
