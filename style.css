@@ -5,7 +5,7 @@ body{
 #background{
     min-height: 100%;
     min-width: 100%;
-    background-image: url(./assets/WALLPAADSDASPER.png);
+    background-image: url(./assets/background.jpg);
     background-position: center;
     background-size: cover;
   
@@ -16,7 +16,7 @@ body{
     justify-content: center;
 }
 #form_container{
-    height: 800px;
+    height: 650px;
     width: 900px;
     background-color: #ffffff;
     flex-direction:column;
@@ -24,6 +24,7 @@ body{
     font-family: Roboto;
     justify-content: flex-start;
     padding: 50px;
+    padding-top: 20px;
     box-sizing: border-box;
     border-radius: 10px;
 }
@@ -48,6 +49,7 @@ body{
     background-color: #9cc10e; 
     border-radius: 3px;
     position: relative;
+    cursor: pointer;
 }
 .content_form{
     font-weight: bold;
@@ -60,4 +62,9 @@ body{
 .content_form_box{
     width: 200px;
     height: 30px;
+}
+#form_container_upcontent{
+    width: 340px;
+    align-items: center;
+    justify-content: center;
 }

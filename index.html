@@ -11,16 +11,37 @@
     <body>
         <div id="background">
             <form id="form_container">
-                <p id="title_form">Assinatura de email FADEX</p>
-                <p class="content_form" id="name_form">Nome</p>                        
-                <input type="text" class="content_form_box" id="name_box" placeholder="Seu nome"/>
-                <p class="content_form" id="jobname_form">Cargo</p>
-                <input type="text" class="content_form_box" id="jobname_box" placeholder="Seu cargo"/>
-                <p class="content_form" id="email_form">E-mail</p>
-                <input type="email" class="content_form_box" id="email_box" placeholder="Seu e-mail"/>
-
+                <table border="0" valign="right" id="form_container_upcontent">
+                    <tr>
+                        <p id="title_form">Assinatura de e-mail FADEX</p>
+                    </tr>
+                    <tr>
+                        <td>
+                        <p class="content_form" id="name_form">Nome</p>                        
+                        </td>
+                        <td>
+                        <input type="text" class="content_form_box" id="name_box" placeholder="Seu nome"/>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <p class="content_form" id="jobname_form">Cargo</p>                       
+                        </td>
+                        <td>
+                            <input type="text" class="content_form_box" id="jobname_box" placeholder="Seu cargo"/>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <p class="content_form" id="email_form">E-mail</p>                      
+                        </td>
+                        <td>
+                            <input type="email" class="content_form_box" id="email_box" placeholder="Seu e-mail"/>
+                        </td>
+                    </tr>         
+                </table>
                 <button id="button_submit" type="button" onclick="set_user_information('name_box','jobname_box','email_box')">GERAR ASSINATURA</button>
-            <div id="table_box">
+                <div id="table_box">
             <table id="main_table"cellpadding="0" cellspacing="0">
             <tbody>
                 <tr>
@@ -29,14 +50,14 @@
                             <tbody>
                                 <tr>
                                     <td id="internal_table_data_cell_1" valign="top" valign="top" align="right">
-                                        <span id="person_name">--Colaborador--<span><br></span></span>
-                                        <span id="person_jobname">--Cargo--</span>				
+                                        <span id="person_name">--Nome Colaborador--<span><br></span></span>
+                                        <span id="person_jobname">--Cargo Colaborador--</span>				
                                     </td>
                                 </tr>
                                 <tr>
                                     <td id="internal_table_data_cell_2" valign="top" align="right">
                                         <span id="person_phone">Fone: (86)3237-1379<span><br></span></span> 
-                                        <a id="person_email" href="mailto:email@fadex.org.br">E-mail: email@fadex.org.br</a> 							
+                                        <a id="person_email" href="mailto:exemplo@fadex.org.br">E-mail: exemplo@fadex.org.br</a> 							
                                     </td>
                                 </tr>
                                 <tr>
@@ -85,7 +106,7 @@
                 </tr>  
             </tbody>
             </table>
-            </div>
+                </div>
             </form>
         </div>
     </body>
