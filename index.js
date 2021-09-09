@@ -8,3 +8,40 @@ function set_user_information(){
     document.getElementById("person_email").innerHTML = emailNewAdd;
     document.querySelector("#person_email").href = `mailto:${emailNewAdd}`;
 }
+
+var Tabela = {
+    selecionarTabela: function(el) {
+      var body = document.body, range, sel;
+      if (document.createRange && window.getSelection) {
+          range = document.createRange();
+          sel = window.getSelection();
+          sel.removeAllRanges();
+          try {
+              range.selectNodeContents(el);
+              sel.addRange(range);
+          } catch (e) {
+              range.selectNode(el);
+              sel.addRange(range);
+          }
+      } else if (body.createTextRange) {
+          range = body.createTextRange();
+          range.moveToElementText(el);
+          range.select();
+      }
+      try {
+        document.execCommand('copy');
+        range.blur();
+      } catch(error){
+        // Exceção aqui
+      }
+    }
+  }
+  
+window.onload = function(){
+  var selecionaTabelaBtn = document.querySelector("#table_box_button_copy");
+  var tabelaDeDados = document.querySelector("#main_table");
+  // Seleciona a tabela no clique do botão
+  selecionaTabelaBtn.addEventListener("click", function(){
+    Tabela.selecionarTabela(tabelaDeDados);
+  });
+} 

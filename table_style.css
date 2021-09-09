@@ -3,6 +3,7 @@ body{
 }
 #main_table{
     font-family:Verdana, Helvetica, sans-serif;
+    position: relative;
 }
 #main_table_data_cell_1{
     font-family:Verdana; 

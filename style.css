@@ -32,7 +32,7 @@ body{
     height: 300px;
     width: 800px;
     background-color: #ffffff;
-    border: #000000 solid 5px;
+    border: #77a810 solid 5px;
     border-radius: 5px;
     position: absolute;
     bottom: 50px;
@@ -64,7 +64,19 @@ body{
     height: 30px;
 }
 #form_container_upcontent{
-    width: 340px;
+    width: 330px;
     align-items: center;
     justify-content: center;
+}
+#table_box_button_copy{
+    margin: 16px;
+    font-weight: bold;
+    color:black;
+    width: 100px;
+    height: 50px;
+    background-color: #9cc10e; 
+    border-radius: 3px;
+    position: absolute;
+    cursor: pointer;
+    align-self: flex-end;
 }
