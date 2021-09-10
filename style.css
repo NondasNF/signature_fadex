@@ -1,12 +1,24 @@
 body{
     margin: 0;
 }
+#container__signature__generator__leftcontent__text, .content_form, .content_form_box, #container__signature__viewer__title, #container__signature__footer__steeps{
+    color: #000000C7;
+}
+#table_box_button_copy, #container__signature__generator__rightcontent__buttonsubmit, #container__signature__generator__rightcontent__buttonclean, #container__signature__viewer, #container__signature__footer{
+    box-shadow: 0px 3px 6px #CCCCCC;
+}
+#container__signature__generator__leftcontent, #container__signature__generator__rightcontent{
+    box-shadow: 0px 3px 6px #00000029;
+    opacity: 1;
+}
+#background, #container__signature__generator__leftcontent__title,#container__signature__generator__leftcontent__text,#container__signature__generator__rightcontent__logo,.content_form#table_box_button_copy, #container__signature__generator__rightcontent__buttonsubmit,#container__signature__generator__rightcontent__buttonclean, #container__signature__viewer, #container__signature__viewer__title,#container__signature__footer,#container__signature__footer__steeps, #container__signature__footer__title{
+    opacity: 1;
+}
 #background{
     width: 100%;
     height: 100%;
     background: #FFFFFF 0% 0% no-repeat padding-box;
     background-size: cover;
-    opacity: 1;
 }
 header, footer{
     height:auto;
@@ -17,12 +29,10 @@ header, footer{
 #container__signature__generator, #container__signature__viewer, #container__signature__footer{
     margin: 20px;
 }
-#container__signature__generator{
+#container__signature__viewer, #container__signature__generator{
     width: 770px;
     height: 413px;
     display: flex;
-    /* top: 136px;
-    left: 131px; */
 }
 #container__signature__generator__leftcontent{
     position: absolute;
@@ -30,8 +40,6 @@ header, footer{
     height: 413px;
     padding: 25px;
     background: #85C70099 0% 0% no-repeat padding-box;
-    box-shadow: 0px 3px 6px #00000029;
-    opacity: 1;
     display:flex;
     flex-direction: column;
     justify-content:center;
@@ -46,15 +54,12 @@ header, footer{
     font: normal normal 900 20px/24px Montserrat;
     letter-spacing: 0px;
     color: #1C1C1C;
-    opacity: 1;
     margin:0;
 }
 #container__signature__generator__leftcontent__text{
     text-align: center;
     font: normal normal medium 14px/18px Montserrat;
     letter-spacing: 0px;
-    color: #000000C7;
-    opacity: 1;
     margin: 0;
 }
 #container__signature__generator__rightcontent{
@@ -63,8 +68,6 @@ header, footer{
     width: 515px;
     height: 413px;
     background: #F2F2F2 0% 0% no-repeat padding-box;
-    box-shadow: 0px 3px 6px #00000029;
-    opacity: 1;
     display: flex;
     align-items: flex-start;
     justify-content: center;
@@ -72,7 +75,6 @@ header, footer{
 #container__signature__generator__rightcontent__logo{
     max-width: 197px;
     max-height: 70px;
-    opacity: 1;
 }
 #container__signature__generator__rightcontent__form{
     width:auto;
@@ -82,8 +84,6 @@ header, footer{
 .content_form{
     font: normal normal 600 12px/15px Montserrat;
     letter-spacing: 0px;
-    color: #000000C7;
-    opacity: 1;
     margin-bottom: 0;
     margin-top: 15px;
 }
@@ -92,7 +92,6 @@ header, footer{
     height: 20px;
     font: normal normal 400 11px/14px Montserrat;
     letter-spacing: 0px;
-    color: #000000C7;
     opacity: 0.9;
     border: 0;
     border-bottom: 1px solid #CCCCCC;
@@ -107,8 +106,6 @@ header, footer{
     width: 179px;
     height: 40px;
     background: #9FC54A 0% 0% no-repeat padding-box;
-    box-shadow: 0px 3px 6px #CCCCCC;
-    opacity: 1;
     border: 0;
     cursor: pointer;
 }
@@ -119,18 +116,11 @@ header, footer{
     width: 179px;
     height: 40px;
     background: #CCCCCC 0% 0% no-repeat padding-box;
-    box-shadow: 0px 3px 6px #CCCCCC;
-    opacity: 1;
     border: 0;
     cursor: pointer;
 }
 #container__signature__viewer{
-    width: 770px;
-    height: 413px;
     background: #F2F2F2 0% 0% no-repeat padding-box;
-    box-shadow: 0px 3px 6px #CCCCCC;
-    opacity: 1;
-    display: flex;
     justify-content: space-between;
     align-items: center;
     flex-direction: column;
@@ -143,8 +133,6 @@ header, footer{
     top:10px;
     font: normal normal 800 12px/15px Montserrat;
     letter-spacing: 0px;
-    color: #000000C7;
-    opacity: 1;
     align-self: flex-start;
 }
 #table_box{
@@ -159,8 +147,6 @@ header, footer{
     width: 1580px;
     height: 413px;
     background: #F2F2F2 0% 0% no-repeat padding-box;
-    box-shadow: 0px 3px 6px #CCCCCC;
-    opacity: 1;
     padding: 25px;
     box-sizing: border-box;
 }
@@ -168,15 +154,12 @@ header, footer{
     font: normal normal 900 20px/24px Montserrat;
     letter-spacing: 0px;
     color: #1C1C1C;
-    opacity: 1;
     margin:0;
 }
 #container__signature__footer__steeps{
     text-align: left;
     font: normal normal medium 12px/25px Montserrat;
     letter-spacing: 0px;
-    color: #000000C7;
-    opacity: 1;
 }
 li{
     padding:2px;
@@ -184,22 +167,11 @@ li{
 @media screen and (max-width: 1580px) {
     body{
     scale: 0.82;
-    display: flex;
-    align-items: center;
-    left: -130px;
-    position: absolute;
-    top: -80px;
     }
 }
 @media screen and (max-width: 800px) {
     body{
         scale:1;
-        left: 0;
-        position: absolute;
-        top: 0;
-    }
-    #background{
-        overflow:hidden;
     }
     header{
         display:block;
@@ -214,15 +186,5 @@ li{
     #container__signature__footer{
         width: 770px;
         height: 413px;
-    }
-    @media screen and (max-width: 400px) {
-        body    {
-        scale: 0.48;
-        display: flex;
-        align-items: center;
-        left: -202px;
-        position: absolute;
-        top: -338px;
-        }
     }
 }
