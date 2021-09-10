@@ -68,8 +68,11 @@ body{
     vertical-align:top; 
     font-family:Verdana;
 }
+#img__logo{
+    max-height:40px; 
+}
 #logo{
-    height:40px; 
+    max-height:40px; 
     width:auto; 
     border:0;
 }
