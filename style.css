@@ -71,7 +71,7 @@ header{
 }
 #container__signature__generator__leftcontent__text{
     text-align: center;
-    font: normal normal medium 14px/18px Montserrat;
+    font: normal normal 500 14px/18px Montserrat;
     letter-spacing: 0px;
     margin: 0;
 }
@@ -168,7 +168,7 @@ header{
 }
 #container__signature__footer__steeps{
     text-align: left;
-    font: normal normal medium 12px/25px Montserrat;
+    font: normal normal 500 12px/25px Montserrat;
     letter-spacing: 0px;
 }
 li{
