@@ -27,7 +27,9 @@ body{
     height: auto;
     background: #F2F2F2 0% 0% repeat padding-box;
     background-size: cover;
-    display:block;
+}
+main{
+    display: block;
 }
 header{
     height:auto;
@@ -175,12 +177,20 @@ li{
     padding:2px;
 }
 @media screen and (max-width: 1580px) {
-    body{
+    main{
     scale: 0.82;
     }
 }
-@media screen and (max-width: 800px) {
+@media screen and (min-width: 1280px) {
     body{
+        display:flex;
+        align-items:center;
+        justify-content:center;
+
+    }
+}
+@media screen and (max-width: 800px) {
+    main{
         scale:1;
     }
     header{
@@ -197,13 +207,5 @@ li{
     #container__signature__footer{
         width: 770px;
         height: 413px;
-    }
-}
-@media screen and (min-width: 1280px) {
-    body{
-        display:flex;
-        align-items:center;
-        justify-content:center;
-
     }
 }
