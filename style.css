@@ -27,7 +27,7 @@ body{
     height: auto;
     background: #F2F2F2 0% 0% repeat padding-box;
     background-size: cover;
-    display:flex;
+    display:block;
 }
 header{
     height:auto;
