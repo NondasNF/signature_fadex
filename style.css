@@ -23,13 +23,19 @@ body{
     background: #FFFFFF 0% 0% no-repeat padding-box;
 }
 #background{
-    width: auto;
-    height: auto;
+    width: 100vw;
+    height: 100vh;
     background: #F2F2F2 0% 0% repeat padding-box;
     background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    flex-direction: column;
+    align-content: center;
 }
 main{
     display: block;
+    
 }
 header{
     height:auto;
@@ -192,6 +198,10 @@ li{
 @media screen and (max-width: 800px) {
     main{
         scale:1;
+    }
+    #background {
+        width: 770px;
+        height: 1230px;
     }
     header{
         display:block;
