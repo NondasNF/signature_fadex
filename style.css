@@ -16,9 +16,6 @@ body{
     box-shadow: 0px 3px 6px #00000029;
     opacity: 1;
 }
-#background, #container__signature__generator__leftcontent__title,#container__signature__generator__leftcontent__text,#container__signature__generator__rightcontent__logo,.content_form#table_box_button_copy, #container__signature__generator__rightcontent__buttonsubmit,#container__signature__generator__rightcontent__buttonclean, #container__signature__viewer, #container__signature__viewer__title,#container__signature__footer,#container__signature__footer__steeps, #container__signature__footer__title{
-    opacity: 1;
-}
 #container__signature__generator__rightcontent, #container__signature__viewer, #container__signature__footer{
     background: #FFFFFF 0% 0% no-repeat padding-box;
 }
@@ -183,8 +180,11 @@ li{
     padding:2px;
 }
 @media screen and (max-width: 1580px) {
-    main{
-    scale: 0.82;
+    #background{
+        align-items: flex-start;
+        justify-content: flex-start;
+        align-content: center;
+        flex-direction: column;
     }
 }
 @media screen and (min-width: 1280px) {
@@ -196,9 +196,6 @@ li{
     }
 }
 @media screen and (max-width: 800px) {
-    main{
-        scale:1;
-    }
     #background {
         width: 770px;
         height: 1230px;
@@ -211,9 +208,6 @@ li{
         margin:0px;
         margin-bottom: 20px;
     }
-    /* #container__signature__generator__rightcontent{
-        left: 262px;
-    } */
     #container__signature__footer{
         width: 770px;
         height: 413px;
