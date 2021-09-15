@@ -89,20 +89,22 @@ header{
     margin: 0;
 }
 #container__signature__generator__rightcontent{
-    position: relative;
     width: 515px;
     height: 413px;
     display: flex;
     align-items: flex-start;
-    justify-content: center;
+    justify-content: space-between;
+    flex-direction: column;
+    padding:20px;
+    box-sizing: border-box;
 }
 #container__signature__generator__rightcontent__logo{
     max-width: 197px;
     max-height: 70px;
+    align-self: center;
 }
 #container__signature__generator__rightcontent__form{
     width:auto;
-    position: absolute;
     top: 96px;
 }
 .content_form{
@@ -112,7 +114,7 @@ header{
     margin-top: 15px;
 }
 .content_form_box{
-    width: 400px;
+    width: 384px;
     height: 20px;
     font: normal normal 400 11px/14px Montserrat;
     letter-spacing: 0px;
@@ -120,10 +122,13 @@ header{
     border: 0;
     border-bottom: 1px solid #CCCCCC;
 }
+#container__signature__generator__rightcontent__buttons{
+    width: 100%;
+    display:flex;
+    justify-content: space-between;
+}
 #container__signature__generator__rightcontent__buttonsubmit{
-    position: absolute;
-    bottom: 35px;
-    left: 52px;
+    
 }
 #table_box_button_copy, #container__signature__generator__rightcontent__buttonsubmit, #container__signature__generator__rightcontent__buttonclean{
     width: 179px;
@@ -135,9 +140,6 @@ header{
     cursor: pointer;
 }
 #container__signature__generator__rightcontent__buttonclean{
-    position: absolute;
-    bottom: 35px;
-    right: 52px;
     background: #CCCCCC 0% 0% no-repeat padding-box;
     border: 0;
     cursor: pointer;
@@ -165,7 +167,7 @@ header{
     height: 65%;
 }
 
-#container__signature__footer{
+#container__signature__footer {
     width: 1560px;
     height: 413px;
     padding: 25px;
@@ -197,7 +199,7 @@ li{
 }
 @media screen and (max-width: 1380px) {
     #container__signature__viewer, #container__signature__generator {
-        width: 700px;
+        width: 600px;
         height: 400px;
     }
     #container__signature__generator, #container__signature__viewer, #container__signature__footer {
@@ -205,22 +207,26 @@ li{
     }
     #container__signature__generator__leftbackground {
         height: 400px;
+        margin-left: -50px;
     }
     #container__signature__generator__leftcontent {
-        width: 233px;
+        width: 170px;
         height: 400px;
     }
     #container__signature__generator__rightcontent {
-        width: 510px;
+        width: 430px;
         height: 400px;
     }
-    #container__signature__footer {
-        width: 1415px;
+    #container__signature__footer{
+        width: 1223px;
         height: 368px;
     }
     #container__signature__generator__rightcontent__buttonsubmit, #container__signature__generator__rightcontent__buttonclean {
         width: 165px;
         height: 36px;
+    }
+    #container__signature__generator__left {
+        width: 170px;
     }
 
 }
