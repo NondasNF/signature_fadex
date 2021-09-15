@@ -195,14 +195,33 @@ li{
         flex-direction: column;
     }
 }
-@media screen and (min-width: 1280px) {
-    body{
-        display:flex;
-        align-items:center;
-        justify-content:center;
-
+@media screen and (max-width: 1380px) {
+    #container__signature__viewer, #container__signature__generator {
+        width: 700px;
+        height: 400px;
     }
+    #container__signature__generator, #container__signature__viewer, #container__signature__footer {
+        margin: 9px;
+    }
+    #container__signature__generator__leftbackground {
+        height: 400px;
+    }
+    #container__signature__generator__leftcontent {
+        width: 233px;
+        height: 400px;
+    }
+    #container__signature__generator__rightcontent {
+        width: 480px;
+        height: 400px;
+    }
+    #container__signature__footer {
+        width: 1415px;
+        height: 368px;
+    }
+    
+
 }
+
 @media screen and (max-width: 800px) {
     #background {
         width: 770px;
