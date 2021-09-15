@@ -31,13 +31,15 @@ body{
     align-content: center;
 }
 main{
-    display: block;
-    
+    display: flex;
+    max-width: 1600px;
+    flex-direction: column;
 }
 header{
     height:auto;
     width:auto;
-    display: inline-flex;
+    display: flex;
+    flex-direction: row;
     
 }
 #container__signature__generator, #container__signature__viewer, #container__signature__footer{
@@ -48,8 +50,18 @@ header{
     height: 413px;
     display: flex;
 }
-#container__signature__generator{
-    justify-content: space-between;   
+#container__signature__generator{  
+    display: flex;
+    position: relative;
+}
+#container__signature__generator__left{
+    width: 255px;
+    height: 413px;
+    overflow: hidden;
+}
+#container__signature__generator__leftbackground{
+    width: auto;
+    height: 413px;
 }
 #container__signature__generator__leftcontent{
     position: absolute;
@@ -61,11 +73,7 @@ header{
     flex-direction: column;
     justify-content:center;
     box-sizing: border-box;
-}
-#container__signature__generator__leftbackground{
-    position: absolute;
-    width: auto;
-    height: 413px;
+    top: 0;
 }
 #container__signature__generator__leftcontent__title{
     text-align: center;
@@ -139,7 +147,7 @@ header{
     align-items: center;
     flex-direction: column;
     padding-bottom: 35px;
-    padding-left:15px;
+    padding-left: 15px;
     box-sizing: border-box;
 }
 #container__signature__viewer__title{
