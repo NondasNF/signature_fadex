@@ -233,7 +233,7 @@ li{
 
 @media screen and (max-width: 800px) {
     #background {
-        width: 770px;
+        width: 600px;
         height: 1230px;
     }
     header{
@@ -245,7 +245,7 @@ li{
         margin-bottom: 20px;
     }
     #container__signature__footer{
-        width: 770px;
+        width: 600px;
         height: 413px;
     }
 }
