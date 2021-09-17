@@ -193,6 +193,9 @@ header{
 li{
     padding:2px;
 }
+#copyright{
+    font-size: 14px;
+}
 @media screen and (max-width: 1580px) {
     #background{
         align-items: flex-start;
@@ -220,6 +223,12 @@ li{
     #container__signature__generator__leftcontent {
         width: 170px;
         height: 400px;
+    }
+    #container__signature__generator__leftcontent__title{
+        font-size:12px;
+    }
+    #container__signature__generator__leftcontent__text{
+        font-size:12px;
     }
     #container__signature__generator__rightcontent {
         width: 430px;
@@ -260,6 +269,6 @@ li{
     }
     #container__signature__footer{
         width: 600px;
-        height: 413px;
+        height: 440px;
     }
 }
