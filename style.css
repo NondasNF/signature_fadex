@@ -194,7 +194,8 @@ li{
     padding:2px;
 }
 #copyright{
-    font-size: 14px;
+    font-size: 11px;
+    color: #9c9c9c;
 }
 @media screen and (max-width: 1580px) {
     #background{
@@ -226,9 +227,11 @@ li{
     }
     #container__signature__generator__leftcontent__title{
         font-size:12px;
+        line-height: 16px;
     }
     #container__signature__generator__leftcontent__text{
         font-size:12px;
+        line-height: 16px;
     }
     #container__signature__generator__rightcontent {
         width: 430px;
